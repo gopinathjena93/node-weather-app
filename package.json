@@ -5,7 +5,7 @@
   "main": "server.js",
   "scripts": {
     "test": "This is a Weater App",
-    "start": "nodemon server.js"
+    "start": "node server.js"
   },
   "author": "Gopinath",
   "license": "ISC",
