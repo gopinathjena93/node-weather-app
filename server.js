@@ -7,12 +7,12 @@ const port = process.env.PORT || 3000
 app.use(express.json());
 app.use(express.static('public'));
 
-app.get('/',(req,res) => {
+/*app.get('/',(req,res) => {
 	//console.log('This is a test page')
 	res.send('Hello World');
 	//res.sendFile('index.html')
 	//res.sendFile(path.join(__dirname+'/index.html'));
-})
+})*/
 
 
 app.post('/weather',(req1,res1) => {
