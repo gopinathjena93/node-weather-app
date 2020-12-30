@@ -2,6 +2,7 @@ const unirest = require("unirest");
 const express = require("express");
 const path = require('path');
 const app = express();
+const port = process.env.PORT || 3000
 
 app.use(express.json());
 app.use(express.static('public'));
@@ -26,6 +27,6 @@ app.post('/weather',(req1,res1) => {
 })
 
 
-app.listen(3000,() => {
-	console.log("Server Start at 3000");
+app.listen(port,() => {
+	console.log(`Server Start at 3000 ${port}`);
 })
